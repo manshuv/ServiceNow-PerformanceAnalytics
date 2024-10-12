@@ -1,6 +1,7 @@
 ```mermaid
 graph TD;
-    A[Indicator Source] --> B[Indicator]
-    B --> C[Scheduled Job]
-    B --> D[Widget]
-    D --> E[Dashboard]
+  E[Dashboard] --> D[Widget]
+    D --> B[Indicator]
+    B --> A[Indicator Source]
+    C[Scheduled Job] --> B
+    
